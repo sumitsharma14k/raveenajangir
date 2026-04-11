@@ -10,7 +10,7 @@
             --olive-mist: #9CAF88;
             --beige: #F5F5DC;
             --khaki: #C3B091;
-            --bone: #F9F6EE;
+            --bone: #FFFFFF;
             --camel: #C19A6B;
             --text-dark: #5C5347;
         }
@@ -30,36 +30,31 @@
 
         /* Header Section */
         header {
-            background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--camel) 100%);
-            color: white;
-            padding: 80px 20px;
+            background-color: var(--bone);
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 40px 20px 0;
         }
 
-        header h1 {
-            font-size: 3.5em;
-            margin-bottom: 10px;
-            font-weight: 300;
-            letter-spacing: 3px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        .header-logo {
+            max-width: 500px;
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            mix-blend-mode: multiply;
         }
 
-        header p {
-            font-size: 1.3em;
-            font-style: italic;
-            opacity: 0.95;
-            margin-top: 15px;
+
+        .header-hero {
+            width: 100vw;
+            height: auto;
+            display: block;
+            margin-left: calc(-50vw + 50%);
         }
 
         /* Navigation */
         nav {
-            background-color: var(--beige);
             padding: 15px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
         }
 
         nav ul {
@@ -239,12 +234,9 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            header p {
-                font-size: 1.1em;
+            .header-logo {
+                width: 70%;
+                max-width: 300px;
             }
 
             .about h2, .portfolio h2, .contact h2 {
@@ -264,19 +256,19 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>RAVEENA JANGIR</h1>
-        <p>Ethnic Wear Fashion Designer</p>
-        <p>✨ Bringing Tradition to Life with Contemporary Elegance ✨</p>
-    </header>
+        <img src="assets/images/website font.jpg" alt="Raveena Jangir" class="header-logo">
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <img src="assets/images/website home page.jpg" alt="Ethnic wear fashion illustrations by Raveena Jangir" class="header-hero">
+    </header>
 
     <!-- About Section -->
     <section class="about" id="about">
